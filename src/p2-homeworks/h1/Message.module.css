@@ -1,0 +1,52 @@
+.Message {
+    display: flex;
+    padding: 10px;
+}
+
+.Message__avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    align-self: flex-end;
+}
+
+.Message__info {
+    position: relative;
+    background-color: #2b2a2a;
+    padding: 10px 55px 15px 20px;
+    border-radius: 10px 10px 10px 0;
+}
+
+.Message__info::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    height: 17px;
+    width: 25px;
+    border-bottom-right-radius: 25px;
+    bottom: 0;
+    left: -25px;
+    box-shadow: 16px 0px 0 0 #2b2a2a;
+}
+
+.Message__author {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #cfcae9;
+}
+
+.Message__text {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    max-width: 200px;
+}
+
+.Message__time {
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #b3b2b8;
+}
