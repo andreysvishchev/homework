@@ -1,7 +1,69 @@
-.someClass {
+.someClass {}
 
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
+.inner {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: rgb(31, 147, 241);
+  border: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+  transition: all .3s;
+  height: 100%;
+}
+
+.button:hover {
+  background-color: rgb(211, 52, 52);
+  color: #fff;
+}
+
+.users {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  border: 2px solid transparent;
+  transition: all .3s;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(31, 147, 241);
+}
+
+.input:focus {
+  border: 2px solid rgb(211, 52, 52);
+}
+
+.input::placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(31, 147, 241);
+}
+
+.err {
+  margin-top: 10px;
+  padding: 3px;
+}
+
+
 .error {
-    border: 1px solid red;
+  border: 2px solid rgb(211, 52, 52);
 }
