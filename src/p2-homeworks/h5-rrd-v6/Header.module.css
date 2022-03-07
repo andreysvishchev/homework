@@ -1,0 +1,42 @@
+.wrap {
+    display: inline-flex;
+    margin: 30px 0;
+    position: relative;
+}
+
+.wrap:hover .nav_list {
+    left: 0;
+}
+
+.btn {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn span {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background-color: #000;
+    margin-bottom: 3px;
+}
+
+.btn span:last-child {
+    margin-bottom: 0;
+}
+
+.nav_list {
+    margin-left: 20px;
+    position: absolute;
+    left: -180px;
+    display: flex;
+    transition: all .3s linear;
+}
+
+
+.nav_link {
+    margin-right: 20px;
+    transition: all .3s linear;
+}
