@@ -1,3 +1,50 @@
 .someClass {
+}
 
+.button {
+  padding: 3px 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.inner {
+  max-width: 40%;
+  margin: 0 auto;
+  background-color: rgba(189, 195, 196, 0.534);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spanInner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  border-radius: 10px;
+  background-color: #95c7b8;
+}
+
+.span {
+  margin-right: 10px;
+  width: 30%;
+  font-weight: 500;
+}
+
+.buutonsInner {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.buutonsInner button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 0 5px;
 }

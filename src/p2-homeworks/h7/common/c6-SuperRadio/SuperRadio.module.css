@@ -1,0 +1,8 @@
+.superRadio {
+  width: 15px;
+  height: 15px;
+}
+
+.superRadio:checked {
+  background-color: red;
+}

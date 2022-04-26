@@ -1,7 +1,35 @@
 .default {
-
+  border: none;
+  background-color: #0c79e1;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 1px #4e4e4e;
+  cursor: pointer;
+  max-width: 200px;
+  width: 100%;
 }
 
 .red {
-    background: red;
+  width: 100%;
+  border: none;
+  max-width: 200px;
+  background: rgb(226, 43, 43);
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 1px #4e4e4e;
+  cursor: pointer;
+}
+
+.default:disabled {
+  background-color: #bdbcbc;
+  color: #000;
+  cursor: default;
 }
