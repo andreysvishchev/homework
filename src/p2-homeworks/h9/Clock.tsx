@@ -3,15 +3,18 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function Clock() {
   const [timerId, setTimerId] = useState<number>(0);
-  const [date, setDate] = useState<Date>();
+  const [date, setDate] = useState<Date>(new Date());
   const [show, setShow] = useState<boolean>(false);
 
   const stop = () => {
-    // stop
+    clearInterval(timerId);
   };
+
   const start = () => {
     stop();
-    const id: number = window.setInterval(() => {}, 1000);
+    const id: number = window.setInterval(() => {
+      setDate(new Date());
+    }, 1000);
     setTimerId(id);
   };
 
@@ -24,8 +27,8 @@ function Clock() {
     setShow(false);
   };
 
-  const stringTime = date.toLocaleString(); // fix with date
-  const stringDate = new Date().toLocaleString("en-US", { year: "numeric", month: "long", day: "2-digit" }); // fix with date
+  const stringTime = date.toLocaleTimeString(); // fix with date
+  const stringDate = date.toLocaleDateString(); // fix with date
 
   return (
     <div>
