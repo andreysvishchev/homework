@@ -7,19 +7,23 @@ function HW11() {
     const [value2, setValue2] = useState(100)
 
     return (
-        <div>
-            <hr/>
-            homeworks 11
+
+        <div className='inner'>
+            <h2 className='title'>
+                homeworks 11
+            </h2>
+
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className='hwInner'>
                 <span>{value1}</span>
                 <SuperRange
+                    onChangeRange={setValue1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
-            <div>
+            <div className='hwInner'>
                 <span>{value1}</span>
                 <SuperDoubleRange
                     // сделать так чтоб value1 и value2 изменялось
@@ -27,11 +31,7 @@ function HW11() {
                 <span>{value2}</span>
             </div>
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
-            <hr/>
+
         </div>
     )
 }
