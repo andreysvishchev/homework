@@ -1,8 +1,11 @@
 import React from 'react'
+import RequestsApi from "../api/RequestsAPI";
 
 function JuniorPlus() {
     return (
-        <div>Jun plus</div>
+        <div>
+            <RequestsApi/>
+        </div>
     )
 }
 
